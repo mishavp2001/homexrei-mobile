@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HomeXREI</string>
+    <string name="title_activity_main">HomeXREI</string>
+    <string name="package_name">com.homexrei.app</string>
+    <string name="custom_url_scheme">com.homexrei.app</string>
+</resources>
