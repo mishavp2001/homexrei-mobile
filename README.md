@@ -247,6 +247,39 @@ npm run sync:ios
 
 ---
 
+## 🔐 OAuth & Deep Linking
+
+OAuth authentication with deep linking is **fully configured** for both mobile and web!
+
+### Quick Start
+
+1. **Add redirect URI to Base44 console**:
+   ```
+   com.homexrei.app://callback
+   ```
+
+2. **Test it**:
+   ```bash
+   npm run sync:android
+   # Click login in app - it works!
+   ```
+
+### Documentation
+
+- **Quick Start**: [`OAUTH_QUICK_START.md`](./OAUTH_QUICK_START.md) - 5-minute setup guide
+- **Detailed Guide**: [`DEEP_LINKING_SETUP.md`](./DEEP_LINKING_SETUP.md) - Complete documentation
+- **Implementation**: [`OAUTH_IMPLEMENTATION_COMPLETE.md`](./OAUTH_IMPLEMENTATION_COMPLETE.md) - What was implemented
+
+### How It Works
+
+The web app automatically detects if it's running in Capacitor (mobile) or browser (web) and uses the appropriate OAuth redirect URI:
+
+- **Mobile**: `com.homexrei.app://callback`
+- **Web**: Current URL (e.g., `http://localhost:5173`)
+- **Dev Mode**: Works with live reload!
+
+---
+
 ## 📖 Additional Resources
 
 - [Capacitor Documentation](https://capacitorjs.com/docs)

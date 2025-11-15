@@ -16,7 +16,17 @@ const config: CapacitorConfig = {
       url: 'http://localhost:8080',
       cleartext: true
     }
-  })
+  }),
+
+  // Deep linking configuration
+  // This enables the app to handle OAuth callbacks and other deep links
+  plugins: {
+    // App plugin handles URL opening events
+    App: {
+      // Handle deep links when app is opened via URL
+      handleOpenURL: true
+    }
+  }
 };
 
 export default config;
