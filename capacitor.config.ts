@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.4b402f234f724f4f8d78cb27ebc1fc95',
+  appId: 'com.homexrei.app',
   appName: 'HomeXREI',
   webDir: 'dist',
   server: {
