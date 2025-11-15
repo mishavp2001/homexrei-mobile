@@ -76,6 +76,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@base44/vite-plugin": "^0.2.5",
     "@eslint/js": "^9.32.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.16.5",
